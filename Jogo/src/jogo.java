@@ -16,7 +16,7 @@ public class jogo {
 		
 		show.println("Olá! Qual é o seu nome?");
 		String nome = scan.nextLine();
-		show.println("Prazer em conhece-lo " + nome + "!");
+		show.println("Prazer em conhece-lo(a) " + nome + "!");
 		show.println(nome + " você quer jogar comigo ?");
 		show.println("\nInforme o número da sua opção.\n1 ->\n2 ->");
 		opcao = scan.nextInt();
@@ -34,7 +34,7 @@ public class jogo {
 			
 			escolha_computador = gerador.nextInt(11); /* 11 pq o sistema entende começando do 0*/
 			
-			show.println("OK" + nome + ". Eu já escolhi! ");
+			show.println("OK " + nome + ". Eu já escolhi! ");
 			show.println("Agora tente adivinhar qual número foi que eu escolhi!");
 			
 			do {
@@ -42,7 +42,7 @@ public class jogo {
 				if(escolha_usuario != escolha_computador) {
 					show.println("Resposta errada!!");
 				}else {
-					show.println("Parabéns, você acertou!!");
+					show.println("Parabéns " + nome + ", você acertou!!");
 				}
 				
 			}while(escolha_computador != escolha_usuario);
